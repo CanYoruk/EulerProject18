@@ -18,7 +18,7 @@ pyramid = [
 
 
 def makechoice(index,row,total):
-  if row < 14:
+  if row < 15:
     if pyramid[row][index] < pyramid[row][index+1]:
       total += pyramid[row][index+1]
       index += 1
@@ -30,3 +30,4 @@ def makechoice(index,row,total):
     print(total)
 
 makechoice(0,1,75)
+#solution = 1064
